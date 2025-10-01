@@ -34,14 +34,10 @@ defaults:
     values:
       layout: "default"
 
-# Navigation
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "Table of Contents"
-    url: "/00-table-of-contents"
-  - title: "GitHub"
-    url: "https://github.com/cloudstreet-dev/Writing-CLI-Apps-with-Dart"
+# Header pages - only these will show in navigation
+header_pages:
+  - index.md
+  - 00-table-of-contents.md
 
 # Exclude from processing
 exclude:
