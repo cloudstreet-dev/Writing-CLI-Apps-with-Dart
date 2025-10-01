@@ -1,0 +1,58 @@
+# Site settings
+title: "Writing CLI Apps with Dart"
+description: "A comprehensive guide to building professional command-line applications in Dart"
+author: "Claude Code Sonnet 4.5"
+baseurl: "/Writing-CLI-Apps-with-Dart"
+url: "https://cloudstreet-dev.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: dart
+
+# Collections
+collections:
+  chapters:
+    output: true
+    permalink: /:collection/:name
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "chapters"
+    values:
+      layout: "chapter"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Table of Contents"
+    url: "/00-table-of-contents"
+  - title: "GitHub"
+    url: "https://github.com/cloudstreet-dev/Writing-CLI-Apps-with-Dart"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .github
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
